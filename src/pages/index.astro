@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
+import Section from '../components/Section.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<Header></Header>
+	<Section>
+		<h1 class="text-white text-center md:text-6xl text-4xl font-bold">Nuestras páginas web</h1>
+	</Section>
+	<Section>
+		<Card
+		 	link="https://www.pireal.com.ar"
+			img="../public/img/pireal.png"
+			descripcion="Somos una empresa de desarrollos inmobiliarios que vincula el Real Estate, el turismo y el vino. Fuimos Galardonados con los premios a la Innovación otorgados por las Universidades Nacional de Cuyo y de Barcelona. Nuestra Visión siempre esta en Futuros que aún no Existen."
+		/>
+	</Section>
+	<Section>
+		<Card
+		 	link="https://www.pilaresandinos.com.ar"
+			img="../public/img/pilaresconstructora.png"
+			descripcion="En Pilares Andinos realizamos diseños de gran expresividad, los cuales dialogan con su entorno y configuran espacios con una notable sensibilidad arquitectónica, sin descuidar el marco sustentable."
+		/>
+	</Section>
+	<Section>
+		<Card
+		 	link="https://www.7tnegociosinmobiliarios.com.ar/inicio"
+			img="../public/img/7t.png"
+			descripcion="En 7T nos especializamos en la identificación de oportunidades de inversión inmobiliaria en el extranjero, y nuestra fortaleza radica en el conocimiento profundo del perfil de los inversores locales. A través de alianzas estratégicas con partners internacionales, podemos administrar una cartera de propiedades en el extranjero."
+		/>
+	</Section>
+	<Section>
+		<Card
+		 	link="https://www.pinvest.com.ar"
+			img="../public/img/pinvest.png"
+			descripcion="Pinvest es una Administradora de Fondo de Inversión Inmobiliaria que permite a pequeños inversores y ahorristas invertir en proyectos inmobiliarios con montos mínimos requeridos."
+		/>
+	</Section>
+</Layout>
+
+<style>
+	
+</style>
